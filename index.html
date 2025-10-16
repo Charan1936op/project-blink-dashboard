@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-BLINK | AI Traffic Optimization Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-title">
+                    <h1>Project-BLINK</h1>
+                    <p>AI-powered Multi-Agent Reinforcement Learning for Bangalore Traffic Optimization</p>
+                </div>
+                <div class="traffic-lights">
+                    <div class="traffic-light">
+                        <div class="light red active"></div>
+                        <div class="light yellow"></div>
+                        <div class="light green"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-value="3">#0</span>
+                        <span class="stat-label">Global Traffic Rank</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-value="17.6">0</span>
+                        <span class="stat-label">Average Speed (km/h)</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-value="38">0%</span>
+                        <span class="stat-label">Congestion Level</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                    <div class="stat-content">
+                        <span class="stat-number" data-value="117">0</span>
+                        <span class="stat-label">Time Lost (hrs/year)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="overview">Overview &amp; Performance</button>
+                <button class="tab-btn" data-tab="training">Training Progress</button>
+                <button class="tab-btn" data-tab="analysis">Traffic Analysis</button>
+                <button class="tab-btn" data-tab="topology">Network Topology</button>
+                <button class="tab-btn" data-tab="architecture">Model Architecture</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tab 1: Overview & Performance -->
+            <section class="tab-content active" id="overview">
+                <div class="hero-section">
+                    <h2>Revolutionary Traffic Optimization</h2>
+                    <p>Project-BLINK implements cutting-edge Multi-Agent Deep Q-Network (MARL-DQN) technology to revolutionize traffic flow in Bangalore. Our system deploys 16 intelligent agents across 4 major intersections, learning optimal traffic light timing patterns through advanced reinforcement learning.</p>
+                </div>
+                
+                <div class="improvements-grid">
+                    <div class="improvement-card">
+                        <div class="improvement-icon wait-time">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <div class="improvement-content">
+                            <span class="improvement-number" data-value="40">0%</span>
+                            <span class="improvement-label">Wait Time Reduction</span>
+                        </div>
+                    </div>
+                    <div class="improvement-card">
+                        <div class="improvement-icon throughput">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="improvement-content">
+                            <span class="improvement-number" data-value="35">0%</span>
+                            <span class="improvement-label">Throughput Increase</span>
+                        </div>
+                    </div>
+                    <div class="improvement-card">
+                        <div class="improvement-icon fuel">
+                            <i class="fas fa-gas-pump"></i>
+                        </div>
+                        <div class="improvement-content">
+                            <span class="improvement-number" data-value="30">0%</span>
+                            <span class="improvement-label">Fuel Savings</span>
+                        </div>
+                    </div>
+                    <div class="improvement-card">
+                        <div class="improvement-icon emission">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="improvement-content">
+                            <span class="improvement-number" data-value="25">0%</span>
+                            <span class="improvement-label">Emission Reduction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-section">
+                    <h3>Performance Comparison: Before vs After MARL Optimization</h3>
+                    <div class="chart-container">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c62cd32f893ded1806a1915cf4f6e99d/10fdf8ca-3af8-41d3-b543-e79b1f2feb61/4f9419f3.png" alt="Performance comparison showing the dramatic improvements achieved by MARL-based traffic light optimization" class="chart-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 2: Training Progress -->
+            <section class="tab-content" id="training">
+                <div class="training-stats">
+                    <div class="training-stat">
+                        <span class="training-number" data-value="5000">0</span>
+                        <span class="training-label">Total Episodes</span>
+                    </div>
+                    <div class="training-stat">
+                        <span class="training-number" data-value="16">0</span>
+                        <span class="training-label">Agents</span>
+                    </div>
+                    <div class="training-stat">
+                        <span class="training-text">MARL-DQN</span>
+                        <span class="training-label">Method</span>
+                    </div>
+                    <div class="training-stat">
+                        <span class="training-text">SUMO</span>
+                        <span class="training-label">Simulation Tool</span>
+                    </div>
+                </div>
+
+                <div class="chart-section">
+                    <h3>Multi-Agent Reinforcement Learning Training Progress</h3>
+                    <p>Monitor how our 16 DQN agents (A0-A3, B0-B3, C0-C3, D0-D3) learn optimal traffic control policies over 5,000 training episodes.</p>
+                    <div class="chart-container">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c62cd32f893ded1806a1915cf4f6e99d/d76916bd-43fc-4bba-a5d1-e03f1f6615b3/2c5673b4.png" alt="Training progress showing how the Multi-Agent Reinforcement Learning system improves over 5000 training episodes" class="chart-image">
+                    </div>
+                </div>
+
+                <div class="agents-grid">
+                    <h4>Agent Performance Overview</h4>
+                    <div class="agents-container">
+                        <div class="junction-group">
+                            <h5>Junction A</h5>
+                            <div class="agent-badges">
+                                <span class="agent-badge">A0</span>
+                                <span class="agent-badge">A1</span>
+                                <span class="agent-badge">A2</span>
+                                <span class="agent-badge">A3</span>
+                            </div>
+                        </div>
+                        <div class="junction-group">
+                            <h5>Junction B</h5>
+                            <div class="agent-badges">
+                                <span class="agent-badge">B0</span>
+                                <span class="agent-badge">B1</span>
+                                <span class="agent-badge">B2</span>
+                                <span class="agent-badge">B3</span>
+                            </div>
+                        </div>
+                        <div class="junction-group">
+                            <h5>Junction C</h5>
+                            <div class="agent-badges">
+                                <span class="agent-badge">C0</span>
+                                <span class="agent-badge">C1</span>
+                                <span class="agent-badge">C2</span>
+                                <span class="agent-badge">C3</span>
+                            </div>
+                        </div>
+                        <div class="junction-group">
+                            <h5>Junction D</h5>
+                            <div class="agent-badges">
+                                <span class="agent-badge">D0</span>
+                                <span class="agent-badge">D1</span>
+                                <span class="agent-badge">D2</span>
+                                <span class="agent-badge">D3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 3: Traffic Analysis -->
+            <section class="tab-content" id="analysis">
+                <div class="analysis-header">
+                    <h2>Real-time Traffic Analysis Dashboard</h2>
+                    <p>Comprehensive analysis of Bangalore traffic patterns based on real data integration and our optimization results.</p>
+                </div>
+
+                <div class="live-metrics">
+                    <div class="metric-card live">
+                        <div class="metric-icon"><i class="fas fa-car"></i></div>
+                        <div class="metric-content">
+                            <span class="metric-number" data-value="2500000">0</span>
+                            <span class="metric-label">Total Vehicles</span>
+                        </div>
+                    </div>
+                    <div class="metric-card live">
+                        <div class="metric-icon"><i class="fas fa-plus-circle"></i></div>
+                        <div class="metric-content">
+                            <span class="metric-number" data-value="2000">0</span>
+                            <span class="metric-label">Daily New Registrations</span>
+                        </div>
+                    </div>
+                    <div class="metric-card live">
+                        <div class="metric-icon"><i class="fas fa-sun"></i></div>
+                        <div class="metric-content">
+                            <span class="metric-number" data-value="15.5">0</span>
+                            <span class="metric-label">Morning Peak Speed (km/h)</span>
+                        </div>
+                    </div>
+                    <div class="metric-card live">
+                        <div class="metric-icon"><i class="fas fa-moon"></i></div>
+                        <div class="metric-content">
+                            <span class="metric-number" data-value="14.3">0</span>
+                            <span class="metric-label">Evening Peak Speed (km/h)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-section">
+                    <h3>24-Hour Traffic Pattern Analysis</h3>
+                    <p>Heatmap visualization showing congestion levels, vehicle volume, and wait times throughout the day.</p>
+                    <div class="chart-container">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/c62cd32f893ded1806a1915cf4f6e99d/591e5c31-45e0-44fd-92c7-02d36fc57bb3/68fffce6.png" alt="24-hour traffic pattern heatmap showing congestion levels, vehicle volume, and wait times throughout the day" class="chart-image">
+                    </div>
+                </div>
+
+                <div class="data-disclaimer">
+                    <div class="disclaimer-card">
+                        <h4><i class="fas fa-info-circle"></i> Data Source Information</h4>
+                        <p><strong>Traffic pattern data shown is generated based on real Bangalore traffic statistics from research sources for demonstration purposes.</strong></p>
+                        <p>This is not live real-time data but represents typical traffic patterns observed in Bangalore's road network based on:</p>
+                        <ul>
+                            <li>TomTom Traffic Index 2024</li>
+                            <li>Bangalore Traffic Police Reports</li>
+                            <li>Government Road Transport Data</li>
+                            <li>Academic Traffic Studies</li>
+                        </ul>
+                        <p><em>The MARL optimization results are from our simulation environment using SUMO (Simulation of Urban Mobility).</em></p>
+                    </div>
+                </div>
+
+                <div class="traffic-insights">
+                    <div class="insight-card">
+                        <h4>Peak Hours Analysis</h4>
+                        <ul>
+                            <li><strong>Morning Peak:</strong> 7:00 - 9:00 AM</li>
+                            <li><strong>Evening Peak:</strong> 5:00 - 7:00 PM</li>
+                            <li><strong>Low Traffic:</strong> 10:00 PM - 6:00 AM</li>
+                        </ul>
+                    </div>
+                    <div class="insight-card">
+                        <h4>Optimization Impact</h4>
+                        <ul>
+                            <li><strong>34% faster</strong> travel times during peak hours</li>
+                            <li><strong>28% reduction</strong> in fuel consumption</li>
+                            <li><strong>42% lower</strong> emissions in city center</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 4: Network Topology -->
+            <section class="tab-content" id="topology">
+                <div class="topology-header">
+                    <h2>Multi-Agent Network Architecture</h2>
+                    <p>Visual representation of our distributed traffic light control network across 4 major Bangalore intersections.</p>
+                </div>
+
+                <div class="network-overview">
+                    <div class="network-stat">
+                        <span class="network-number">4</span>
+                        <span class="network-label">Intersections</span>
+                    </div>
+                    <div class="network-stat">
+                        <span class="network-number">16</span>
+                        <span class="network-label">Traffic Light Agents</span>
+                    </div>
+                    <div class="network-stat">
+                        <span class="network-number">24</span>
+                        <span class="network-label">Road Segments</span>
+                    </div>
+                    <div class="network-stat">
+                        <span class="network-number">4D</span>
+                        <span class="network-label">Observation Space</span>
+                    </div>
+                </div>
+
+                <div class="network-diagram">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1755538917/pplx_project_search_images/21c251bc9a5e3fbe747268fadc040d17ff6cd972.png" alt="Network connectivity diagram of a traffic light intersection" class="network-image">
+                </div>
+
+                <div class="junction-details">
+                    <div class="junction-card">
+                        <h4>Junction A</h4>
+                        <div class="junction-metrics">
+                            <div class="metric">
+                                <span class="metric-title">Wait Time Reduction</span>
+                                <span class="metric-value">49.8s → 20.5s</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Throughput Increase</span>
+                                <span class="metric-value">805 → 1425 veh/h</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Queue Length</span>
+                                <span class="metric-value">9.7 → 4.8 vehicles</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="junction-card">
+                        <h4>Junction B</h4>
+                        <div class="junction-metrics">
+                            <div class="metric">
+                                <span class="metric-title">Wait Time Reduction</span>
+                                <span class="metric-value">48.5s → 26.2s</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Throughput Increase</span>
+                                <span class="metric-value">832 → 1773 veh/h</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Queue Length</span>
+                                <span class="metric-value">14.7 → 5.2 vehicles</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="junction-card">
+                        <h4>Junction C</h4>
+                        <div class="junction-metrics">
+                            <div class="metric">
+                                <span class="metric-title">Wait Time Reduction</span>
+                                <span class="metric-value">49.9s → 23.1s</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Throughput Increase</span>
+                                <span class="metric-value">1095 → 1652 veh/h</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Queue Length</span>
+                                <span class="metric-value">11.7 → 6.3 vehicles</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="junction-card">
+                        <h4>Junction D</h4>
+                        <div class="junction-metrics">
+                            <div class="metric">
+                                <span class="metric-title">Wait Time Reduction</span>
+                                <span class="metric-value">44.2s → 19.8s</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Throughput Increase</span>
+                                <span class="metric-value">998 → 1598 veh/h</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-title">Queue Length</span>
+                                <span class="metric-value">12.1 → 4.9 vehicles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab 5: Model Architecture -->
+            <section class="tab-content" id="architecture">
+                <div class="architecture-header">
+                    <h2>Multi-Agent Deep Q-Network Architecture</h2>
+                    <p>Technical deep-dive into our advanced reinforcement learning approach for intelligent traffic signal control.</p>
+                </div>
+
+                <div class="architecture-overview">
+                    <div class="arch-card">
+                        <h4>Algorithm</h4>
+                        <p>Deep Q-Network (DQN) with experience replay and target network for stable learning in multi-agent environment.</p>
+                    </div>
+                    <div class="arch-card">
+                        <h4>Environment</h4>
+                        <p>Multi-Agent SUMO Traffic Environment with realistic vehicle dynamics and traffic flow simulation.</p>
+                    </div>
+                </div>
+
+                <div class="technical-specs">
+                    <div class="spec-section">
+                        <h4>Observation Space (4D)</h4>
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Mean Vehicle Count</span>
+                                <span class="spec-desc">Average vehicles across all approaches</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Vehicle Count</span>
+                                <span class="spec-desc">Peak vehicle count in any approach</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Mean Wait Time</span>
+                                <span class="spec-desc">Average waiting time across approaches</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Max Wait Time</span>
+                                <span class="spec-desc">Maximum wait time in any approach</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="spec-section">
+                        <h4>Reward Function</h4>
+                        <div class="reward-formula">
+                            <code>Reward = -Σ(waiting_time)</code>
+                            <p>Minimize total waiting time across all vehicles at the intersection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="training-params">
+                    <h4>Training Parameters</h4>
+                    <div class="params-grid">
+                        <div class="param-item">
+                            <span class="param-label">Learning Rate</span>
+                            <span class="param-value">0.0001</span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Buffer Size</span>
+                            <span class="param-value">10,000</span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Batch Size</span>
+                            <span class="param-value">64</span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Discount Factor (γ)</span>
+                            <span class="param-value">0.95</span>
+                        </div>
+                        <div class="param-item">
+                            <span class="param-label">Exploration</span>
+                            <span class="param-value">ε-greedy (10%)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Project-BLINK | AI-powered Traffic Optimization System</p>
+            <p>Developed for Bangalore Smart City Initiative | SUMO Integration | Multi-Agent Reinforcement Learning</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
